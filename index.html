@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d732738b39.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Temperature Conveter</title>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="home-content">
+        <h1>Temperature Conveter</h1>
+        <p class="span-el">
+          Experience the simplicity of temperature conversion with our
+          user-friendly platform. Convert between Celsius, Fahrenheit, and
+          Kelvin at the click of a button!
+        </p>
+        <h2 class="swipe">
+          Scroll Down <i class="fa-solid fa-chevron-down"></i>
+        </h2>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="temperature-convert-container">
+        <h1 class="heading">Temperature Converter</h1>
+        <div class="temperature-container">
+          <input
+            type="number"
+            placeholder="Enter the Temperature"
+            class="input-bar"
+            id="temperature"
+          />
+          <label for="from">From</label>
+          <select id="from">
+            <option value="C" class="value">Celcious</option>
+            <hr />
+            <option value="F">Fahrenheit</option>
+            <hr />
+            <option value="K">Kelvin</option>
+          </select>
+          <label for="to">To</label>
+          <select id="to">
+            <option value="F">Fahrenheit</option>
+            <hr />
+            <option value="C">Celcious</option>
+            <hr />
+            <option value="K">Kelvin</option>
+          </select>
+
+          <button onclick="convert()">Convert</button>
+          <input type="text" id="result" readonly class="input-bar2" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container3">
+      <div class="footer-content">
+        <h2>Designed and Developed by <br /><span>Prasanya Shankar</span></h2>
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/prasanya-shankar/"
+            target="_blank"
+            class="tooltip-icon"
+            ><i class="fa-brands fa-linkedin-in icon"></i>
+            <span class="tooltiptext-icon">LinkedIn</span></a
+          >
+          <a
+            href="https://github.com/prasanya-web-developer"
+            target="_blank"
+            class="tooltip-icon"
+            ><i class="fa-brands fa-github icon"></i
+            ><span class="tooltiptext-icon">GitHub</span></a
+          >
+          <a
+            href="mailto:prasanya.webdev@gmail.com"
+            target="_blank"
+            class="tooltip-icon"
+            ><i class="fa-solid fa-envelope icon"></i
+            ><span class="tooltiptext-icon">Gmail</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
